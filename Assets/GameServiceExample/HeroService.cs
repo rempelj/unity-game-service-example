@@ -25,6 +25,7 @@ namespace GSE
             foreach (var abilityData in abilitiesDatas)
             {
                 var controller = GameObject.Instantiate(abilityData.prefab);
+                controller.Setup(abilityData);
                 abilities.Add(controller);
             }
         }
